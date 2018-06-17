@@ -17,7 +17,7 @@ title: Monkey Developer
 email: ziogiugno@gmail.com
 description: Nonsense considerations about software development from a monkey developer 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ziogiugno.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ziogiugno.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ziogiugno
 github_username:  ziogiugno
 
