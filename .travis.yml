@@ -5,9 +5,9 @@ cache:
 notifications:
   email:
     recipients:
-      - ziogiugno@github.com
-    on_success: never
-    on_failure: never
+      - ziogiugno@gmail.com
+    on_success: always
+    on_failure: always
 node_js:
   - '9'
 git:
