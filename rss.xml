@@ -1,121 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[A GatsbyJS stater with Material design in mind.]]></description><link>https://ziogiugno.github.io/gatsby-material-starter</link><image><url>https://ziogiugno.github.io/gatsby-material-starter/logos/logo-512.png</url><title>Untitled RSS Feed</title><link>https://ziogiugno.github.io/gatsby-material-starter</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Sat, 27 Apr 2019 07:21:46 GMT</lastBuildDate><atom:link href="https://ziogiugno.github.io/gatsby-material-starter/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019. Material User]]></copyright><item><title><![CDATA[Introducing Gatsby Material Starter]]></title><description><![CDATA[Around a year ago, this project was one of the first ones ported to the   version of GatsbyJS. And now, it's super exciting for me to…]]></description><link>https://ziogiugno.github.io/gatsby-material-starter/introducing-gatsby-material-starter</link><guid isPermaLink="false">https://ziogiugno.github.io/gatsby-material-starter/introducing-gatsby-material-starter</guid><category><![CDATA[gatsby]]></category><category><![CDATA[material]]></category><category><![CDATA[starter]]></category><pubDate>Mon, 02 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Around a year ago, this project was one of the first ones ported to the &lt;code class=&quot;language-text&quot;&gt;v1&lt;/code&gt; version of GatsbyJS.&lt;/p&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Great news! Gatsby Material starter is now based on stable V1 of &lt;a href=&quot;https://twitter.com/gatsbyjs&quot;&gt;@gatsbyjs&lt;/a&gt;!&lt;a href=&quot;https://t.co/P2JqNbcRmk&quot;&gt;https://t.co/P2JqNbcRmk&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ruben Harutyunyan (@Vagr9K) &lt;a href=&quot;https://twitter.com/Vagr9K/status/883073085963993089&quot;&gt;July 6, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;p&gt;And now, it&apos;s super exciting for me to announce the &lt;code class=&quot;language-text&quot;&gt;v2&lt;/code&gt; version of &lt;code class=&quot;language-text&quot;&gt;Gatsby Material Starter&lt;/code&gt; with the support of the newest Gatsby v2 features!&lt;/p&gt;
-&lt;p&gt;You can also visit &lt;a href=&quot;https://vagr9k.me&quot;&gt;my personal blog&lt;/a&gt; if you want to see a fully implemented blog based on this starter.&lt;/p&gt;
-&lt;p&gt;New features are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;NetlifyCMS support&lt;/li&gt;
-&lt;li&gt;Complete optimization of all image assets via &lt;code class=&quot;language-text&quot;&gt;gatsby-image&lt;/code&gt; for faster loading times&lt;/li&gt;
-&lt;li&gt;New date formatting options&lt;/li&gt;
-&lt;li&gt;Netlify build configuration to make deploys easier&lt;/li&gt;
-&lt;li&gt;Less restrictive URL options&lt;/li&gt;
-&lt;li&gt;Bug fixes related to dates and sorting&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Full feature list:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/mlaursen/react-md&quot;&gt;React-MD&lt;/a&gt; for Material design&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Integrated FontAwesome support&lt;/li&gt;
-&lt;li&gt;Integrated Material Icons support&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SASS/SCSS styling&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.netlifycms.org/docs/intro/&quot;&gt;NetlifyCMS&lt;/a&gt; support for creating/editing posts via admin panel&lt;/li&gt;
-&lt;li&gt;Separate components for everything&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;High configurability:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;User information&lt;/li&gt;
-&lt;li&gt;User social profiles&lt;/li&gt;
-&lt;li&gt;Copyright information&lt;/li&gt;
-&lt;li&gt;More!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Author segment&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Name&lt;/li&gt;
-&lt;li&gt;Location&lt;/li&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;li&gt;Links&lt;/li&gt;
-&lt;li&gt;Follow Me button&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Posts in Markdown&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Code syntax highlighting&lt;/li&gt;
-&lt;li&gt;Embedded YouTube videos&lt;/li&gt;
-&lt;li&gt;Embedded Tweets&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Tags&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Seprate page for posts under each tag&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Categories&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Separate page for posts under each category&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Suggested posts segment&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Disqus support&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Notifications about new disqus comments&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Responsive design&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;On mobile, Disqus is loaded only after expanding comments for better performance&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Social features&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Twitter tweet button&lt;/li&gt;
-&lt;li&gt;Facebook share/share count&lt;/li&gt;
-&lt;li&gt;Reddit share/share count&lt;/li&gt;
-&lt;li&gt;Google+ share button&lt;/li&gt;
-&lt;li&gt;LinkedIn share button&lt;/li&gt;
-&lt;li&gt;Telegram share button&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;SEO&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Sitemap generation&lt;/li&gt;
-&lt;li&gt;robots.txt&lt;/li&gt;
-&lt;li&gt;General description tags&lt;/li&gt;
-&lt;li&gt;Schema.org JSONLD (Google Rich Snippets)&lt;/li&gt;
-&lt;li&gt;OpenGraph Tags (Facebook/Google+/Pinterest)&lt;/li&gt;
-&lt;li&gt;Twitter Tags (Twitter Cards)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RSS feeds&lt;/li&gt;
-&lt;li&gt;Loading progress for slow networks&lt;/li&gt;
-&lt;li&gt;Offline support&lt;/li&gt;
-&lt;li&gt;Web App Manifest support&lt;/li&gt;
-&lt;li&gt;Automatic image transformation and size optimization&lt;/li&gt;
-&lt;li&gt;Netlify deploy configuration&lt;/li&gt;
-&lt;li&gt;Google Analytics support&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Development tools&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ESLint for linting&lt;/li&gt;
-&lt;li&gt;Prettier for code style&lt;/li&gt;
-&lt;li&gt;Remark-Lint for linting Markdown&lt;/li&gt;
-&lt;li&gt;write-good for linting English prose&lt;/li&gt;
-&lt;li&gt;gh-pages for deploying to GitHub pages&lt;/li&gt;
-&lt;li&gt;CodeClimate configuration file and badge&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;NOTE: Take a look at &lt;a href=&quot;https://github.com/Vagr9K/gatsby-advanced-starter&quot;&gt;gatsby-advanced-starter&lt;/a&gt; if you prefer building UI from scratch and/or only interested in fundamental features.&lt;/p&gt;
-&lt;p&gt;More information is available on &lt;a href=&quot;https://github.com/Vagr9K/gatsby-material-starter&quot;&gt;GitHub repository page&lt;/a&gt;.&lt;/p&gt;</content:encoded><author></author></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Il blog del primate]]></title><description><![CDATA[.]]></description><link>https://ziogiugno.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 Mar 2020 22:42:25 GMT</lastBuildDate><item><title><![CDATA[Ciao Mondo Gatsby!]]></title><description><![CDATA[Ecco il mio primo post nel blog realizzato grazie a Gatsby ed ospitato da Github Pages.
+Avevo cominciato tanto tempo fà a vedere Github…]]></description><link>https://ziogiugno.github.io/hello-world/</link><guid isPermaLink="false">https://ziogiugno.github.io/hello-world/</guid><pubDate>Tue, 14 Apr 2020 19:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Ecco il mio primo post nel blog realizzato grazie a Gatsby ed ospitato da Github Pages.
+Avevo cominciato tanto tempo fà a vedere Github Pages come piattaforma per ospitare il mio blog, mi impegnai seguendo le indicazione e misi in piedi il repository. Allora però lo strumento più in voga per la realizzazione del blog era Jekyll. Essendo io non esperto di Ruby mi cimentai con non poche difficoltà nel metttere in piedi il blog, ed alla fine il progetto non prese mai vita.&lt;/p&gt;
+&lt;p&gt;Diverso tempo dopo, nel tentativo di trovare un’alternativa a Metalsmith, strumento cha avevo usato come generatore del sito web www.agriturismo-aiole.com di cui sono webmaster :-), mi sono imbattuto in Gatby.js dopo aver a suo tempo valutato anche altre alternative ( tipo Hugo e DocGen). Essendomi già convinto di puntare la mia attenzione sui generatori basati su node.js rispetto a quelli in Ruby, Java o altri linguaggi, Gatsby faceva proprio al caso mio!
+Peccato però che avendo investito parte del mio tempo nell’apprendimento di Angular, mi sono ritrovato a combatttere con un tool che fonda la sua potenza su graphQL e React, due mondi a me sconosciuti e quindi il progetto del blog fù rimesso in soffitta, ma non prima di pubblicare almeno un post, del quale ho conservato uno sceenshot come ricordo.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/165e6b78d1c59b48bcb5a45af159822e/b4472/old-blog.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAACG0lEQVQoz12S3W/SYBSH+Y80ovEjQ8ERl2zJ1GxLlnhh4uVMNHiloi4EyaLx0j9DF2CQrIyPEOwy4wah3CiTj2IayncGtMAQfjunzI3Z5Mn79vx6np43rSkajSIej4PXSDSGiCiew7VEYqq2ezFnYtQTDhv9MdqbstksDolfuRxKUhrlDxtQNjxQXOuop1Ko+rxQ1t9C8bw3aorbNck9bqifPkJOp5GlXnawyyTLMuRCAYVyGY2QgMHCHPT5OfSXHgC/D3H87Cl0uxWD1RUcP3mMwaNV9BcXoC/Oo0/P1SJhFNSK4WCXqcAyekNRVfHz6xd8m7UhYb8L8eF9pIIBiCtLSMzcxK7zNfYjEfzw+RC/NwvRbsN3yy1k6V6uVAwHuwxhPp+HQhPG/D68um3BG5sVTusduBwOvFtehtMyA8flS3hx4zperq3h+bWrcJuv4LPZDDEQgELCPA9VLE6ERYbG5X1ybw9lClS6bzUa6B4doVuvQ2s20SW0TsdYO5R1Wk2odDIeiGVnQiZHb6hWq2i2WtB0HVqvh16/D03T0Ol2DbiuE1zXKR8Oh2iQOHd6XOPIpVIJfwi2t0g2Go3O4KvdbqNWq6FOU3ZouvF4fJr/NfImTcu97GCXaf/gAP9I0m+SyWQgSdI5VJMok5LJCdMZwT3TDlOIvlLI78eO14tQMAhBEC6yvQ2BnhE2Nyf7//LQ1hZ22MH9tJ4AjFGS8V1s2PAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Homepage del mio vecchio blog &quot;
+        title=&quot;Homepage del mio vecchio blog &quot;
+        src=&quot;/static/165e6b78d1c59b48bcb5a45af159822e/fcda8/old-blog.png&quot;
+        srcset=&quot;/static/165e6b78d1c59b48bcb5a45af159822e/12f09/old-blog.png 148w,
+/static/165e6b78d1c59b48bcb5a45af159822e/e4a3f/old-blog.png 295w,
+/static/165e6b78d1c59b48bcb5a45af159822e/fcda8/old-blog.png 590w,
+/static/165e6b78d1c59b48bcb5a45af159822e/efc66/old-blog.png 885w,
+/static/165e6b78d1c59b48bcb5a45af159822e/c83ae/old-blog.png 1180w,
+/static/165e6b78d1c59b48bcb5a45af159822e/b4472/old-blog.png 2468w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+Ben presto mi pentii anche del gatsby starter utilizzato, con troppi plugin sconosciuti che aggiungevano difficoltà al mio percorso di apprendimento, decisi quindi di ripartire da uno starter minimale, con l’intenzione di arricchirlo mano mano che il mio livello di skill aumentava, ma non aumentò di molto perchè ben presto mi buttai a vedere altre cose ( PWA e ionic in particolare ), perchè ho realizzato che mettersi a studiare qualcosa che poi non si mette in pratica nel lungo periodo non ti lascia molto.
+Ma veniamo ai giorni nostri, il coronavirus ci forza allo smart working, a stare in casa per tanto tempo, quale migliore occasione per riprendere qualche vecchio progetto? Tanto più che stò maturando l’idea che possano essere dei validi strumenti da utilizzare anche in ambito lavorativo, sia Gatsby che graphQL come alternativa a REST. Eccomi qui quindi a scrivere il mio primo post, con l’impegno di non lasciarlo solo. La prima cosa che mi impegno a fare è di rivedermi un minimo di documentazione su Markdown per dare a questo primo post un’aspetto migliore… a presto!&lt;/p&gt;</content:encoded></item></channel></rss>
