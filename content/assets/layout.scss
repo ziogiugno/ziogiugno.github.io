@@ -1,0 +1,26 @@
+html {
+  background-color: whitesmoke;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 950px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.slug-link {
+  font-weight: bold;
+}
+
+.logo {
+  margin: 0;
+}
+header {
+  padding: 0rem;
+}
+
+footer {
+  flex-grow: 1;
+}
