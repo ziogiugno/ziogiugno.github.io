@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { rhythm } from "../utils/typography";
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -18,40 +17,28 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h2>{post.frontmatter.title}</h2>
+        <h2 className="title">{post.frontmatter.title}</h2>
         <p>{post.frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1)
-          }}
-        />
+        <hr />
         <Bio />
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0
-          }}
-        >
-          <li>
+        <nav className="level">
+          <div className="level-left">
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
-          </li>
-          <li>
+          </div>
+          <div className="level-right">
             {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
-          </li>
-        </ul>
+          </div>
+        </nav>
       </Layout>
     );
   }
@@ -73,7 +60,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date
       }
     }
   }

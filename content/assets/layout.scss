@@ -1,26 +1,25 @@
-html {
-  background-color: whitesmoke;
-}
+@charset "utf-8";
+// Set your brand colors
+$green: #1ca086;
+$brown: #757763;
 
-.container {
-  margin: 0 auto;
-  max-width: 950px;
-  padding: 1rem;
+// Update Bulma's global variables
+$grey-dark: $brown;
+$primary: $green;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+// $body-background-color: $beige-lighter;
+@import "~bulma/bulma.sass";
+
+// Sticky Footer
+.site {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
-}
-.slug-link {
-  font-weight: bold;
+  flex-direction: column;
 }
 
-.logo {
-  margin: 0;
-}
-header {
-  padding: 0rem;
-}
-
-footer {
+.site-content {
   flex-grow: 1;
 }

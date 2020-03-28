@@ -1,7 +1,7 @@
 ---
 title: "Ciao Mondo Gatsby!"
 description: "Il mio blog costrutio con Gatsby, ospitato su Github e automaticamente costruito e pubblicato su github.io"
-date: "2020-04-14T19:12:03.284Z"
+date: "14/3/2020"
 ---
 
 Ecco il mio primo post nel blog realizzato grazie a Gatsby ed ospitato da Github Pages.

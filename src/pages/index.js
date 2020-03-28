@@ -21,15 +21,15 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
-            <div key={node.fields.slug}>
-              <small>{node.frontmatter.date}</small>
+            <section className="" key={node.fields.slug}>
+              <small className="tile">{node.frontmatter.date}</small>
               <div>
-                <Link className="slug-link" to={node.fields.slug}>
+                <Link className="subtitle is-medium" to={node.fields.slug}>
                   {title}
                 </Link>
                 <p>{node.frontmatter.description}</p>
               </div>
-            </div>
+            </section>
           );
         })}
       </Layout>
@@ -54,7 +54,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD/MM/YYYY")
+            date
             title
             description
           }
