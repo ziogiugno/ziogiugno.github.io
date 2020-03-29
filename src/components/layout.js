@@ -29,17 +29,20 @@ class Layout extends React.Component {
           <main className="content">
             <div class="columns">
               <div class="column is-three-quarters">{children}</div>
-              <div class="column is-info">
-                <small>
-                  Da circa 20 anni mi occupo di sviluppo di applicazioni web,
-                  principalmente in Java. Ho maturato negli anni esperienza sui
-                  principali framework ( Struts, Spring, Grails) e di recente su
-                  Angular e Ionic. La prima parte della carriera svolta nel
-                  mondo TLC su sistemi gestionali e di monitoraggio legati al
-                  mondo della telefonia pubblica e delle intercettazioni. Da un
-                  decennio impiegato in Istat nello sviluppo di applicativi
-                  legati alle rilevazioni.
-                </small>
+              <div class="column">
+                <article class="tile is-child notification is-primary">
+                  <div class="subtitle">A proposito di me</div>
+                  <small>
+                    Da circa 20 anni mi occupo di sviluppo di applicazioni web,
+                    principalmente in Java. Ho maturato negli anni esperienza
+                    sui principali framework ( Struts, Spring, Grails) e di
+                    recente su Angular e Ionic. La prima parte della carriera
+                    svolta nel mondo TLC su sistemi gestionali e di monitoraggio
+                    legati al mondo della telefonia pubblica e delle
+                    intercettazioni. Da un decennio impiegato in Istat nello
+                    sviluppo di applicativi legati alle rilevazioni.
+                  </small>
+                </article>
               </div>
             </div>
           </main>
