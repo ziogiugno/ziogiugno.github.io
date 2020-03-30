@@ -19,24 +19,31 @@ class BlogPostTemplate extends React.Component {
         />
         <div className="subtitle is-size-3">{post.frontmatter.title}</div>
         <p>{post.frontmatter.date}</p>
-        <div class="content" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          className="content"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <hr />
         <Bio />
 
         <nav className="level">
           <div className="level-left">
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
+            <small>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </small>
           </div>
           <div className="level-right">
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
+            <small>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </small>
           </div>
         </nav>
       </Layout>

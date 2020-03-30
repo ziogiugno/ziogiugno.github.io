@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "mio-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "My blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Duma Rolando <ziogiugno@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ziogiugno/"
   },
   "dependencies": {
     "gatsby": "^2.3.34",
@@ -42,7 +42,7 @@
     "gh-pages": "^2.2.0",
     "prettier": "^1.17.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://ziogiugno.github.io",
   "keywords": [
     "gatsby"
   ],
@@ -50,7 +50,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/ziogiugno/ziogiugno.github.io.git"
   },
   "scripts": {
     "build": "gatsby build",
