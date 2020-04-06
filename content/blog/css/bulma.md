@@ -1,7 +1,7 @@
 ---
 title: "Bulma - Un CSS framework 'semantico' ;-)"
 description: "Una nuova veste grafica al mio blog con questo simpatico framework"
-date: "25/03/2020"
+date: 2020-03-25
 ---
 
 Impegnato nel restyling del sito www.agriturismo-aiole.com mi sono messo alla ricerca di un framework css che mi aiutasse. Anche adesso quello che cerco è un framework css leggero ( allora usai Material Design Lite ), dopo una veloce ricerca mi sono imbattuto in Bulma, che con circa 40 mila stelle su GitHub ha attirato la mia attenzione. Il framework sembra abbastanza facile da imparare, con la possibilità di usare sass si può ridurre l'utilizzo all'essenziale. La migrazione del sito dell'agriturismo però necessita ancora di un pò di lavoro preparatorio in quanto necessita del supporto multilingua ( che implemento grazie al plugin di Gatsby react-intl ), quindi ho pensato bene di farmi le ossa con Bulma adottandolo qui, nel mio neonato blog. Avevo già installato il plugin sass ( gatsby-plugin-sass ), quindi per metterlo all'opera ho cominciato con: <code>yarn add --dev bulma</code>.
