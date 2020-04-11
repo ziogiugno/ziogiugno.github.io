@@ -1,0 +1,7 @@
+---
+title: "Electron - installazione dietro proxy"
+description: "I test e2e sono preconfigurati nel vostro progetto angular/ionc... ma funzionano?"
+date: 2020-04-08
+---
+
+npx cross-env ELECTRON_GET_USE_PROXY=true GLOBAL_AGENT_HTTPS_PROXY=http://localhost:3128 npm install electron
