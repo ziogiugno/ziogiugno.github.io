@@ -37,8 +37,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "build:pp": "gatsby build --prefix-paths",
-    "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
+    "build:gh": "npm run clean && npm run build && gh-pages -d public -b master",
     "clean": "rm -rf public && rm -rf .cache",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }

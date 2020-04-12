@@ -4,3 +4,4 @@ public
 yarn.lock
 src/.DS_Store
 .vscode
+.DS_Store
