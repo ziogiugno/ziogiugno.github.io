@@ -2,3 +2,5 @@ node_modules
 public
 .cache
 yarn.lock
+src/.DS_Store
+.vscode

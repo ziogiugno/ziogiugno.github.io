@@ -1,0 +1,27 @@
+---
+title: "Test e2e - consigli per novizi ( come me )"
+description: I test e2e sono preconfigurati nel vostro progetto angular/ionc... ma funzionano?
+date: 2020-04-05
+---
+
+Allora abbiamo il nostro bel progetto Angular o Ionic e un bel giorno decidiamo che è cosa buona e giusta eseguire dei test e2e ( che in parole povere sono test di integrazione ).
+Apriamo la nostra bella shell e lanciamo fiduciosi il comando `ng e2e` e...
+
+> ng e2e events.js:187 throw er; // Unhandled 'error' event....
+
+Il problema è che nessuno ci ha detto che il setup non è completo, i test e2e si basano su protractor che và installato:
+
+`npm i -g protractor`
+
+ma non lasciatevi prendere da facili entusiasmi, `ng e2e` fallisce di nuovo...
+
+> Error: connect ETIMEDOUT...
+
+Anche qui dovevate sapere che protractor usa selenium e i suoi webdriver per simulare un vero browser ( Chrome di default ) e che i driver se non li hai in locale il driver-manager cerca di scaricarli da internet o di aggiornarli, ma se sei in azienda con un bel proxy l'update non funziona. Puoi sempre aggiungere l'opzione `--webdriver-update=false` al comando ng e2e ma solo se almeno una volta il benedetto driver te lo sei scaricato e installato. Procedi quindi fiducioso e tenti l'aggiornamento dei driver con `webdriver-manager update` ma ancora non ci siamo...
+
+> Error: connect ETIMEDOUT...
+
+Forniamo quindi al nostro webdriver-manager le giuste info sul proxy `webdriver-manager update --proxy=http://proxy.server.host:port` e... **BINGO!**
+Finalmente abbiamo protractor e i driver, procediamo con `ng e2e --webdriver-update=false`... ma niente da fare. Googoliamo ancora un pò per scoprire che i driver che abbiamo aggiornato in realta sono package globali ( così come l'installazione di protractor ), mentre il progetto ha già protractor come dipendenza ( questo l'avrei potuto scoprire fin da subito guardando il package.json ), ma necessita dei webdriver come package locali. Per fare questo oramai sò tutto e posso mettere uno script nel package.json per consentire a tutti i colleghi che lavorano sul progetto di procedere all' aggiornamento. Ora che il mio package.json contiene la riga  
+`"webdriver-update": "webdriver-manager update --proxy=http://proxy.server.host:port"`  
+posso eseguire l'aggiornamento e finalmente concentrarmi a scrivere i miei test di integrazione.
