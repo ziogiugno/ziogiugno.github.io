@@ -1,0 +1,27 @@
+---
+title: "Major Upgrade: Benvenuti in Gatsby 5 e React 18"
+description: "Come ho aggiornato il blog superando il catch-22 delle vecchie incompatibilità di Node.js"
+date: 2026-03-22
+---
+
+Oggi ho deciso di dare una decisa rinfrescata tecnologica al mio blog. Il progetto originale, basato su Gatsby 2 e React 16, iniziava a mostrare i segni del tempo, soprattutto quando provavo a installare e compilare il sito sulle versioni moderne di Node.js (come Node 24).
+
+Il problema principale si presentava con vecchie dipendenze (ad esempio l'elaborazione delle immagini tramite `sharp`), che fallivano rovinosamente la generazione dei binari nativi se non utilizzavo versioni obsolete di Node. Mi sono trovato incastrato in un classico "vicolo cieco" (catch-22):
+- Provando a compilare con **Node 14** per accontentare `sharp`, la build andava in errore perché alcune librerie aggiornate di terze parti richiedevano sintassi JavaScript moderne, come l'operatore di nullismo (`??=`), non supportate da Node 14.
+- Provando a compilare con **Node 18** o superiori, il vecchio `gatsby-plugin-mdx` (v2) andava in crash per un conflitto di namespace globale (`File is not defined`).
+
+L'unica soluzione veramente stabile per il futuro era un **Major Upgrade**.
+
+Ecco i passaggi che ho eseguito:
+
+1. **Aggiornamento radicale del `package.json`**: Ho portato tutte le dipendenze direttamente alle major release più recenti:
+   - `gatsby` da `v2` a `^5.13.0`
+   - `react` e `react-dom` da `v16.8` a `^18.2.0`
+   - Il tema `@lekoarts/gatsby-theme-minimal-blog` aggiornato alla `^6.2.6`
+2. **Reinstallazione pulita**: Cancellati `node_modules` e vecchi lockfile, ho lanciato il classico `npm install` usando direttamente le piene potenzialità di Node 24.
+3. **Il banco di prova**: Ho lanciato la compilazione finale del sito (`npm run build`).
+
+Con piacevole sorpresa, **nessuna modifica manuale al codice è stata necessaria**! Il nuovo tema di LekoArts e Gatsby 5 hanno digerito perfettamente la vecchia configurazione del file `gatsby-config.js` e i miei post pre-esistenti in Markdown/MDX.
+
+Adesso il blog compila in pochi secondi, ha fondamenta moderne, è intrinsecamente più performante e soprattutto è di nuovo manutenibile in futuro senza dover impazzire con i cambi di versione all'interno di `nvm`!
+P.S. Questo post è stato generato da Gemini 3 Pro High con Perplexity e revisionato da me.
